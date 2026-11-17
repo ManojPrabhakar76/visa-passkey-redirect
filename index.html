@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Visa Passkey | ING</title>
+    <meta name="description" content="Passkey for Visa visitors at ING.">
+    <link rel="canonical" href="https://www.ing.com.au/visa-passkey.html" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+</head>
+<script>
+    if (window.opener && !window.opener.closed) {
+        window.opener.postMessage(
+            {
+                type: "VISA_PASSKEY_REDIRECT_COMPLETE"
+            },
+            "*"
+        );
+    }
+
+    setTimeout(function () {
+        window.close();
+    }, 1000);
+</script>
+
+</html>
